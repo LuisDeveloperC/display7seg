@@ -1,10 +1,11 @@
 #include <xc.h>
 #include "config.h"
+#include "disp7seg.h"
 
 
 void main(void) 
 {
-    TRISD = 0x00;
-    PORTD = 0x00;
+    disp_init();
+    
     return;
 }
